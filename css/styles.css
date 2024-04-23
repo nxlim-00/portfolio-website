@@ -241,7 +241,7 @@ button:focus,
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   grid-gap: 30px;
-  margin: 250px;
+  margin: 0 250px;
   width: auto;
   padding: 100px;
 }
@@ -261,6 +261,16 @@ button:focus,
 .grid__item:hover {
   cursor: pointer;
   transform: scale(1.02);
+}
+
+.gridheader {
+  display: flex;
+  margin: 50px 300px 0;
+  flex-flow: column wrap;
+  align-items: center;
+  border: 1px dashed var(--primary-color);
+  border-radius: 25px;
+  padding: 30px;
 }
 
 .grid__item:nth-child(1) {
@@ -576,21 +586,6 @@ th:last-of-type {
   border-top-right-radius: 10px;
 }
 
-/* rounding the bottom corners of the table */
-
-/* tr:last-of-type td:first-of-type {
-  border-bottom-left-radius: 10px;
-}
-tr:last-of-type td:last-of-type {
-  border-bottom-right-radius: 10px;
-} */
-
-.gridheader {
-  display: flex;
-  margin-left: 100px;
-  flex-flow: column wrap;
-}
-
 .contactme {
   max-width: 100%;
   display: flex;
@@ -599,7 +594,7 @@ tr:last-of-type td:last-of-type {
   flex-direction: row;
   align-content: space-between;
   padding: 50px;
-  margin: 30px 300px;
+  margin: 50px 300px;
   border: 1px solid var(--primary-color);
   border-radius: 10px;
   background-color: rgba(0, 198, 207, 0.05);
@@ -656,6 +651,7 @@ input {
   border-bottom: 2px solid var(--primary-color);
   border-radius: 5px;
   margin-bottom: 20px;
+  background-color: var(--primary-background-color);
 }
 
 textarea {
@@ -666,7 +662,7 @@ textarea {
   border: 0.5px solid var(--secondary-color);
   border-bottom: 2px solid var(--primary-color);
   border-radius: 5px;
-  background-color: #f8f8f8;
+  background-color: var(--primary-background-color);
   resize: none;
 }
 
