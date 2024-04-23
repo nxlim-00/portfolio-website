@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/style.production.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css"> 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,16 +34,17 @@
         </ul>
       </nav>
     </header>
-    <main > 
-      <div class="contactsite">    
-      <div class="contactme" >
+    <main> 
+         
+      <div class="contactme">
             <h2>Quick message:</h2>
             <p><a class="button" href="mailto:nina@fantasymail.com">Mail me!</a></p>
             <p><a class="button" href="tel:+49 999 999 999">Call me!</a></p>
             <p><a class="button" href="skype:hello.fantasyskypename">Skype me!</a></p>
           </div>  
-
-          <div ><form action="/login-form-action" method="post" id="contact-form">
+      <div class="contactsite"> 
+          <div id="contact-form">
+            <form action="/login-form-action" method="post" >
             <p><h2>Only love letters:</h2></p>
             <label for="fname">First name:</label>
             <input type="text" id="fname" name="fname" required><br>
@@ -58,17 +60,16 @@
 
 
             <label for="message-input">Message:</label>
-            <textarea id="message-input" name="message" maxlength="240" style="width:240px; height:100px;" required></textarea> <br><br>
+            <textarea id="message-input" name="message" maxlength="240" required></textarea> <br>
            
             <button type="submit">Submit</button>
-          </form><br>
+          </form>
           </div>
           <div id="contactdetails">
             <p><h2>My contact details:</h2></p>
             Musterstraße 123<br>
             11111 Musterstadt<br>
             Deutschland<br>
-            <br>
             <br>
             Mail: <a href="mailto:nina@fantasymail.com">nina@fantasymail.com</a><br>
             Tel: <a href="tel:+49 999 999 999">+49 999 999 999</a><br>

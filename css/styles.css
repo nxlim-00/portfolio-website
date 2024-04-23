@@ -19,12 +19,6 @@ body {
   box-sizing: border-box;
 }
 
-header {
-  font-weight: bold;
-  font-size: 18px;
-  border-bottom: 1px solid var(--primary-color);
-}
-
 main {
   line-height: 1.8;
 }
@@ -49,6 +43,10 @@ footer {
   display: flex;
   width: 100%;
   padding: 20px;
+  align-content: center;
+  font-weight: bold;
+  font-size: 18px;
+  border-bottom: 1px solid var(--primary-color);
 }
 
 .page-header__item {
@@ -593,6 +591,20 @@ tr:last-of-type td:last-of-type {
   flex-flow: column wrap;
 }
 
+.contactme {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  align-content: space-between;
+  padding: 50px;
+  margin: 30px 300px;
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+  background-color: rgba(0, 198, 207, 0.05);
+}
+
 .contactsite {
   width: 100%;
   display: flex;
@@ -602,27 +614,72 @@ tr:last-of-type td:last-of-type {
   align-content: flex-start; */
 }
 
+#contactdetails {
+  width: 100%;
+  align-items: flex-start;
+  padding: 30px;
+  margin: 50px;
+  align-content: flex-start;
+  background-color: rgba(0, 198, 207, 0.05);
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+}
+
 #contact-form {
   width: 100%;
   display: flex;
-  align-items: flex-start;
-  flex-flow: wrap column;
   padding: 50px;
+  margin: 50px;
+  background-color: rgba(0, 198, 207, 0.05);
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
 }
 
-.contactme {
+form {
+  font-weight: bold;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: column;
-  padding: 50px;
+  flex-flow: wrap column;
+  align-items: flex-start;
+  padding: 30px;
+  align-content: flex-start;
+}
+
+label {
+  margin: 0;
+}
+
+input {
+  width: 100%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 0.5px solid var(--secondary-color);
+  border-bottom: 2px solid var(--primary-color);
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 5px;
+  box-sizing: border-box;
+  border: 0.5px solid var(--secondary-color);
+  border-bottom: 2px solid var(--primary-color);
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+input:focus,
+textarea:focus {
+  width: 100%;
+  border: 2px solid var(--primary-color);
 }
 
 #contactdetails {
   width: 100%;
   display: flex;
-  flex-flow: wrap column;
+  flex-flow: column;
   padding: 50px;
 }
 
