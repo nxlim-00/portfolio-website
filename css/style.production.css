@@ -989,7 +989,7 @@ form {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 30px;
+  padding: 0 30px;
   -ms-flex-line-pack: start;
       align-content: flex-start;
 }

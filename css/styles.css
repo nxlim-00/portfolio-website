@@ -645,7 +645,7 @@ form {
   width: 100%;
   flex-flow: wrap column;
   align-items: flex-start;
-  padding: 30px;
+  padding: 0 30px;
   align-content: flex-start;
 }
 
