@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
@@ -201,14 +201,18 @@ a:active {
 }
 
 .gridlink {
+  margin-top: 10px;
   color: var(--text-color);
   text-decoration: none;
   font-weight: bold;
+  outline: 2px solid var(--text-color);
+  border-radius: 10px;
 }
 
 .gridlink:visited {
   color: var(--text-color);
   text-decoration: none;
+  border-radius: 10px;
 }
 
 .gridlink:hover {
@@ -220,6 +224,7 @@ a:active {
 .gridlink:active {
   color: var(--secondary-color);
   outline: 2px solid var(--secondary-color);
+  border-radius: 10px;
 }
 
 button,
@@ -269,7 +274,6 @@ button:focus,
 }
 
 .grid__item:hover {
-  cursor: pointer;
   transform: scale(1.02);
 }
 
@@ -696,4 +700,21 @@ textarea:focus {
   justify-content: flex-end;
   position: absolute;
   padding-bottom: 50px;
+}
+
+.textlink,
+.textlink:focus,
+.textlink:active {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: bold;
+}
+.textlink:hover {
+  color: var(--primary-background-color);
+  font-weight: bold;
+}
+
+.gridtext {
+  text-align: justify;
+  text-align-last: justify;
 }
