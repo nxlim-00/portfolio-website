@@ -12,7 +12,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
     />
     <link rel="stylesheet" type="text/css" href="css/style.production.css" />
-    <!-- <link rel="stylesheet" type="text/css" href="css/styles.css">  -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/styles.css" /> -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -48,7 +48,7 @@
           </li>
           <li role="presentation">
             <a href="work.html" role="menuitem" class="navigation-list__item"
-              >Work</a
+              >Projects</a
             >
           </li>
           <li role="presentation">
@@ -63,16 +63,16 @@
       </nav>
     </header>
     <main>
-      <div class="contactme">
+      <!-- <div class="contactme">
         <h2>Quick message:</h2>
         <p><a class="button" href="mailto:nina@fantasymail.com">Mail me!</a></p>
         <p><a class="button" href="tel:+49111222333">Call me!</a></p>
         <p>
           <a class="button" href="skype:hello.fantasyskypename">Skype me!</a>
         </p>
-      </div>
+      </div> -->
       <div class="contactsite">
-        <div id="contact-form">
+        <!-- <div id="contact-form">
           <form action="/login-form-action" method="post">
             <h2>Only love letters:</h2>
             <label for="fname">First name:</label>
@@ -102,19 +102,41 @@
 
             <button type="submit">Submit</button>
           </form>
-        </div>
+        </div> -->
         <div id="contactdetails">
           <h2>My contact details:</h2>
-          Musterstraße 123<br />
+          <!-- Musterstraße 123<br />
           11111 Musterstadt<br />
-          Deutschland<br />
+          Deutschland<br /> -->
           <br />
-          Mail: <a href="mailto:nina@fantasymail.com">nina@fantasymail.com</a
-          ><br />
-          Tel: <a href="tel:+49111222333">+49 111 222 333</a><br />
-          Skype:
-          <a href="skype:hello.fantasyskypename">hello.fantasyskypename</a>
-          <br /><br />
+
+          <!-- Tel: <a href="tel:+49111222333">+49 111 222 333</a><br /> -->
+          <div class="contactImage">
+            <div class="gridImage">
+              <img
+                class="contactLink"
+                src="img/googlemail-icon.svg"
+                alt="Google logo"
+                onClick="window.open('mailto:niluza20@gmail.com')"
+              />
+            </div>
+            <div class="gridImage">
+              <img
+                class="contactLink"
+                src="img/github_icon.svg"
+                alt="Github logo"
+                onClick="window.open('https://github.com/nxlim-00')"
+              />
+            </div>
+            <div class="gridImage">
+              <img
+                class="contactLink"
+                src="img/linkedin_icon.svg"
+                alt="LinkedIn logo"
+                onClick="window.open('https://www.linkedin.com/in/nina-zankl-406233245/')"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </main>
@@ -123,7 +145,5 @@
       <a href="#" class="backtop">Back to the top</a>
       <!-- <button type="button">Back to the top</button> -->
     </div>
-
-    <script src="js/tota11y.min.js"></script>
   </body>
 </html>
