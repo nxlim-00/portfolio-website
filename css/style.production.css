@@ -842,7 +842,7 @@ th:last-of-type {
 .contactImage {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr) [100px];
+  /*  -ms-grid-columns: (1fr) [100px]; */
   grid-template-columns: repeat(100px, 1fr);
   margin: 20px auto;
 }
