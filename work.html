@@ -12,7 +12,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
     />
     <link rel="stylesheet" type="text/css" href="css/style.production.css" />
-    <!-- <link rel="stylesheet" type="text/css" href="css/styles.css">  -->
+    <!--  <link rel="stylesheet" type="text/css" href="css/styles.css" /> -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -52,7 +52,7 @@
               href="work.html"
               role="menuitem"
               class="navigation-list__item navigation-list__item--active"
-              >Work</a
+              >Projects</a
             >
           </li>
           <li role="presentation">
@@ -64,100 +64,227 @@
       </nav>
     </header>
 
-    <section>
+    <div>
       <div class="gridheader">
-        <h1>My Work</h1>
-        <br />
+        <h1>Welcome to my project overview</h1>
 
-        <p>Below you find my best projects I have already accomplished.</p>
-        <p>Feel free to take a look:</p>
+        <div class="gridheaderTitle">
+          Here, you'll find a diverse range of applications and solutions that
+          I've developed, showcasing my skills in various programming languages,
+          frameworks, and technologies.
+          <br />
+          <br />
+          Feel free to explore, and don't hesitate to reach out if you have any
+          questions or would like to collaborate!
+        </div>
       </div>
 
       <div class="grid">
         <div class="grid__item">
-          <h2>Meet App</h2>
-          <p class="gridtext">
-            "Meet App" is a React application that allows users to explore
-            events by selecting a city and choosing how many events to display.
-            It includes interactive features like city search, event filtering,
-            and data visualizations with charts. The app also provides alerts
-            for offline status and other notifications, ensuring a smooth user
-            experience.
-          </p>
-          <p>
-            <a class="gridlink" href="https://github.com/nxlim-00/meet"
-              >See project on GitHub</a
-            >
-          </p>
-        </div>
-        <div class="grid__item">
-          <h2>myFlix - Web-App (frontend)</h2>
-
-          <p class="gridtext">
-            The myFlix frontend is a React-based web application that allows
-            users to browse and search for movies, view detailed information,
-            and manage their profile and favorite movies, all while being
-            authenticated via a token-based login system. The project is hosted
-            on Netlify.
-          </p>
-
-          <p>
-            <a class="gridlink" href="https://github.com/nxlim-00/myFlix-client"
+          <div class="gridItemTitle"><h2>myFlix (React)</h2></div>
+          <div>
+            <img src="img/myflixreact.png" class="projectImage" />
+            <p class="gridtext">
+              The myFlix-client is a React-based web application that allows
+              users to browse, search, and view detailed information about a
+              collection of movies. It features user authentication, enabling
+              users to sign up, log in, and manage their profiles, including
+              creating a personalized list of favorite movies. The application
+              fetches movie data from a backend API and provides a responsive
+              interface using React Bootstrap for a seamless user experience.
+              <br />
+              <br />
+              Technologies used:
+              <br />React, React Router, Redux, React Bootstrap.
+            </p>
+          </div>
+          <div class="gridFooter">
+            <a
+              class="gridlink"
+              onClick="window.open('https://github.com/nxlim-00/myFlix-client');"
               >See project on Github</a
             >
-          </p>
+            <a
+              class="gridHostLink"
+              onClick="window.open('https://myflixx-movie-app.netlify.app')"
+              >See (live) hosted version</a
+            >
+          </div>
         </div>
         <div class="grid__item">
-          <h2>myFlix - Web-App (backend)</h2>
-          <p class="gridtext">
-            This code sets up a RESTful API for my movie app
-            <a class="textlink" href="https://github.com/nxlim-00/myFlix-client"
-              >myFlix</a
+          <div class="gridItemTitle"><h2>myFlix (Angular)</h2></div>
+          <div>
+            <img src="img/myflixangular.png" class="projectImage" />
+            <p class="gridtext">
+              myFlix Angular Client is a web application that allows users to
+              browse a movie database, view movie details, manage their favorite
+              movies, and handle user accounts. The application is built using
+              Angular and connects to a backend service for user authentication
+              and movie data management.
+              <br />
+              <br />
+              Technologies used:
+              <br />Angular, Angular Material, RxJS
+            </p>
+          </div>
+
+          <div class="gridFooter">
+            <a
+              class="gridlink"
+              onClick="window.open('https://github.com/nxlim-00/myFlix-Angular-client')"
+              >See project on Github</a
             >
-            using Express, MongoDB, and Mongoose. The API allows users to
-            register, update their profiles, add or remove favorite movies, and
-            access movie details by title, genre, or director. It includes
-            authentication with JWT, validation for user input, and CORS
-            settings to control access from specific origins. The app also
-            serves static files and handles errors gracefully.
-          </p>
-          <p>
-            <a class="gridlink" href="https://github.com/nxlim-00/myFlix"
+            <a
+              class="gridHostLink"
+              onClick="window.open('https://nxlim-00.github.io/myFlix-Angular-client/')"
+              >See (live) hosted version</a
+            >
+          </div>
+        </div>
+        <div class="grid__item">
+          <div class="gridItemTitle"><h2>myFlix - API</h2></div>
+          <div>
+            <p class="gridtext">
+              This code sets up a RESTful API for the myFlix-projects with React
+              and Angular using Express, MongoDB, and Mongoose. The API allows
+              users to register, update their profiles, add or remove favorite
+              movies, and access movie details by title, genre, or director.
+              <br />
+              <br />
+              It includes authentication with JWT, validation for user input,
+              and CORS settings to control access from specific origins. The app
+              also serves static files and handles errors gracefully.
+              <br />
+              <br />
+              It's hosted on Heroku.
+              <br />
+              <br />
+              Technologies used:
+              <br />Node.js, Express, MongoDB, Mongoose, REST API, Bootstrap.
+            </p>
+          </div>
+          <div class="gridFooter">
+            <a
+              class="gridlink"
+              onClick="window.open('https://github.com/nxlim-00/myFlix')"
               >See project on GitHub</a
             >
-          </p>
+          </div>
+        </div>
+        <div class="grid__item">
+          <div class="gridItemTitle"><h2>Meet App</h2></div>
+          <div>
+            <img src="img/meetapp.png" class="projectImage" />
+            <p class="gridtext">
+              "Meet App" is a React application that allows users to explore
+              events by selecting a city and choosing how many events to
+              display. It includes interactive features like city search, event
+              filtering, and data visualizations with charts. The app also
+              provides alerts for offline status and other notifications,
+              ensuring a smooth user experience.
+              <br />
+              <br />
+              Technologies used:
+              <br />React, Google Calendar API, AWS Lambda, Serverless, TDD, PWA
+              features.
+            </p>
+          </div>
+
+          <div class="gridFooter">
+            <a
+              class="gridlink"
+              onClick="window.open('https://github.com/nxlim-00/meet')"
+              >See project on GitHub</a
+            >
+            <a
+              class="gridHostLink"
+              onClick="window.open('https://nxlim-00.github.io/meet/')"
+              >See (live) hosted version</a
+            >
+          </div>
+        </div>
+        <div class="grid__item">
+          <div class="gridItemTitle"><h2>Pokedex</h2></div>
+          <div>
+            <img src="img/pokedex.png" class="projectImage" />
+            <p class="gridtext">
+              This project is a web application that displays a list of Pokémon
+              using data fetched from the PokeAPI. It is built using HTML, CSS,
+              JavaScript, and Bootstrap for styling.
+              <br />
+              <br />
+              Technologies used:
+              <br />HTML, CSS, JavaScript, external APIs (Pokémon API).
+            </p>
+          </div>
+
+          <div class="gridFooter">
+            <a
+              class="gridlink"
+              onClick="window.open('https://github.com/nxlim-00/simple-js-app')"
+              >See project on GitHub</a
+            >
+            <a
+              class="gridHostLink"
+              onClick="window.open('https://nxlim-00.github.io/simple-js-app/')"
+              >See (live) hosted version</a
+            >
+          </div>
         </div>
 
         <div class="grid__item">
-          <h2>Pokedex</h2>
-          <p class="gridtext">
-            This project is a web application that displays a list of Pokémon
-            using data fetched from the PokeAPI. It is built using HTML, CSS,
-            JavaScript, and Bootstrap for styling. It's hosted on gh-pages.
-          </p>
-          <p>
-            <a class="gridlink" href="https://github.com/nxlim-00/simple-js-app"
+          <div class="gridItemTitle"><h2>Chat-App</h2></div>
+          <div>
+            <img src="img/chatapp.png" class="chatImage" />
+            <p class="gridtext">
+              ChatApp is a real-time messaging application built with React
+              Native, Firebase, and Expo. This app allows users to send and
+              receive messages, share images, and even send their current
+              location. It also supports offline message caching using
+              AsyncStorage.
+              <br />
+              <br />
+              Technologies used:
+              <br />React Native, Expo, Expo ImagePicker, Expo Location, Google
+              Firestore/Firebase, Gifted Chat Library, Android Studio
+            </p>
+          </div>
+
+          <div class="gridFooter">
+            <a
+              class="gridlink"
+              onClick="window.open('https://github.com/nxlim-00/chat-app')"
               >See project on GitHub</a
             >
-          </p>
+          </div>
         </div>
+
         <div class="grid__item">
-          <h2>Photos of my dog</h2>
-          <p class="gridtext">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua.
-          </p>
-          <p><a class="gridlink" href="#">See project on GitHub</a></p>
-        </div>
-        <div class="grid__item">
-          <h2>Business Application</h2>
-          <p class="gridtext">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua.
-          </p>
-          <p><a class="gridlink" href="#">See project on GitHub</a></p>
+          <div class="gridItemTitle"><h2>To-Do-List</h2></div>
+          <div>
+            <img src="img/todolist.png" class="projectImage" />
+            <p class="gridtext">
+              A simple and interactive To-Do List application that allows users
+              to add, mark, delete, and reorder tasks.
+              <br />
+              <br />
+              Technologies used:
+              <br />HTML5, CSS, JavaScript, jQuery, jQuery UI.
+            </p>
+          </div>
+
+          <div class="gridFooter">
+            <a
+              class="gridlink"
+              onClick="window.open('https://github.com/nxlim-00/to-do-list-app')"
+              >See project on GitHub</a
+            >
+            <a
+              class="gridHostLink"
+              onClick="window.open('https://nxlim-00.github.io/to-do-list-app/')"
+              >See (live) hosted version</a
+            >
+          </div>
         </div>
       </div>
 
@@ -1854,22 +1981,21 @@
           </g>
         </g>
       </svg>
-    </section>
 
-    <footer class="page-footer">
-      <!-- <p>Find me on</p>
+      <footer class="page-footer">
+        <!-- <p>Find me on</p>
         <div class="social-media">
                 
                 <img src="img/github_icon.svg" alt="Github logo">
                 <img src="img/twitter_icon.svg" alt="Twitter logo">
                 <img src="img/linkedin_icon.svg" alt="LinkedIn logo">
         </div> -->
-    </footer>
-    <br />
-    <div class="backtoplink">
-      <a href="#" class="backtop">Back to the top</a>
-      <!-- <button type="button">Back to the top</button> -->
+      </footer>
+      <br />
+      <div class="backtoplink">
+        <a href="#" class="backtop">Back to the top</a>
+        <!-- <button type="button">Back to the top</button> -->
+      </div>
     </div>
-    <script src="js/tota11y.min.js"></script>
   </body>
 </html>
