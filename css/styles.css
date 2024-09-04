@@ -37,8 +37,8 @@ main {
   flex-direction: column;
   border: 1px dashed var(--primary-color);
   border-radius: 25px;
-  padding: 30px;
-  margin: 50px;
+  padding: 10px;
+  margin: 30px;
   align-items: center;
   align-content: center;
   width: 80%;
@@ -208,7 +208,7 @@ a:active {
   background-color: var(--secondary-color);
 }
 
-button,
+/* button,
 .button {
   border: none;
   font-family: inherit;
@@ -230,47 +230,71 @@ button:focus,
   cursor: pointer;
   background-color: var(--secondary-color);
   opacity: 0.8;
-}
+} */
 
 .gridheader {
   display: flex;
   flex-direction: column;
   width: 90%;
   max-width: 700px;
-  margin: 50px auto;
-  flex-flow: column wrap;
+  margin: 30px auto;
+  border: 1px dashed var(--primary-color);
+  border-radius: 25px;
+  padding: 20px 40px 40px;
+
   align-content: center;
   align-items: center;
   justify-content: center;
-  background-color: var(--primary-color);
-  color: var(--primary-background-color);
-  text-align: left;
-
-  transition: transform 0.6 ease;
-  border-radius: 25px;
-  border: 2px solid var(--text-color);
-  opacity: 0.9;
-  padding: 50px;
 }
 
 .gridheaderTitle {
   align-items: center;
+
+  width: 90%;
+  max-width: 700px;
 }
 
 .projectImage {
   max-width: 100%;
-  border: 2px solid var(--text-color);
+  border-top: 2px solid var(--text-color);
+  border-bottom: 2px solid var(--text-color);
 }
 
 .chatImage {
+  display: block;
+  margin: 0 auto;
   max-height: 300px;
+  width: auto;
   border: 2px solid var(--text-color);
 }
+
+.more-btn:hover {
+  color: var(--text-color);
+  background-color: var(--secondary-color);
+  transform: scale(1.02);
+}
+
+.more-btn {
+  display: block;
+  margin: 10px auto;
+  color: var(--primary-background-color);
+  background-color: transparent; /* Start with a transparent background */
+  text-decoration: none;
+  outline: 1px solid var(--primary-background-color);
+  border-radius: 50px;
+  cursor: pointer;
+  text-align: center;
+  width: fit-content;
+  padding: 7px 15px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition effect */
+}
+
+/* Hover effect to differentiate from the links */
 
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  grid-gap: 50px;
+  grid-gap: 40px;
   margin: 50px auto;
   width: 90%;
 }
@@ -281,24 +305,27 @@ button:focus,
 
 .grid__item {
   display: flex;
-  min-width: 400px;
+  min-width: 300px;
   background-color: var(--primary-color);
   color: var(--primary-background-color);
   text-align: left;
-  padding: 20px 20px 50px;
+  /*  padding: 20px 20px 50px; */
   display: inline-block;
   transition: transform 0.6 ease;
   border-radius: 25px;
-  border: 2px solid var(--text-color);
-  opacity: 0.9;
+  /*border: 2px solid var(--text-color); */
+  opacity: 0.8;
 }
 
 .grid__item:hover {
   transform: scale(1.02);
+  opacity: 1;
 }
 
 .gridFooter {
-  margin-top: auto;
+  border-top: 1px dashed var(--text-color);
+  margin-top: 30px;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -306,60 +333,63 @@ button:focus,
 }
 
 .gridlink {
-  margin-top: 30px;
-  color: var(--text-color);
+  margin-top: 20px;
+  color: var(--primary-background-color);
   text-decoration: none;
-  font-weight: bold;
-  outline: 2px solid var(--text-color);
-  border-radius: 10px;
+  outline: 1px solid var(--primary-background-color);
+  border-radius: 50px;
   cursor: pointer;
+  padding: 5px 10px;
 }
 
 .gridlink:visited {
   color: var(--text-color);
   text-decoration: none;
-  border-radius: 10px;
+  border-radius: 50px;
 }
 
 .gridlink:hover {
-  outline: 2px solid var(--primary-background-color);
-  color: var(--primary-background-color);
+  outline: 2px solid var(--text-color);
+  color: var(--text-color);
   font-weight: bolder;
+  border-radius: 50px;
 }
 
 .gridlink:active {
   color: var(--secondary-color);
   outline: 2px solid var(--secondary-color);
-  border-radius: 10px;
+  border-radius: 50px;
 }
 
 .gridHostLink {
-  margin-top: 30px;
-  color: var(--text-color);
+  margin-top: 10px;
+  color: var(--primary-background-color);
   text-decoration: none;
-  font-weight: bold;
-  outline: 2px solid var(--text-color);
-  border-radius: 10px;
+  /*   font-weight: bold; */
+  outline: 1px solid var(--primary-background-color);
+  border-radius: 50px;
   cursor: pointer;
+  padding: 5px 10px;
 }
 
 .gridHostLink:visited {
   color: var(--text-color);
   text-decoration: none;
-  border-radius: 10px;
+  border-radius: 50px;
   cursor: pointer;
 }
 
 .gridHostLink:hover {
-  outline: 2px solid var(--primary-background-color);
-  color: var(--primary-background-color);
+  outline: 2px solid var(--text-color);
+  color: var(--text-color);
+  border-radius: 50px;
   font-weight: bolder;
 }
 
 .gridHostLink:active {
   color: var(--secondary-color);
   outline: 2px solid var(--secondary-color);
-  border-radius: 10px;
+  border-radius: 50px;
 }
 
 /* @media for responsive website */
@@ -500,10 +530,11 @@ button:focus,
 
 .aboutGrid {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  /* grid-template-columns: 1fr 2fr; */
+  grid-template-columns: repeat(auto-fit, minmax(500px, 2fr));
   gap: 40px;
   align-items: start;
-  margin: 40px;
+  margin: 0 40px;
 }
 
 .aboutGridItem {
@@ -512,6 +543,7 @@ button:focus,
 }
 
 .aboutQual {
+  max-width: 700px;
   border: 1px dashed var(--primary-color);
   border-radius: 25px;
   padding: 0 20px;
@@ -604,26 +636,22 @@ th:last-of-type {
 .contactsite {
   width: 100%;
   display: flex;
-
-  /* display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  grid-gap: 20px; */
   justify-content: center;
 }
 
 #contactdetails {
+  width: 100%;
   max-width: 500px;
-  width: 80%;
-  align-items: flex-start;
-  padding: 30px;
-  margin: 50px 30px;
-  align-content: flex-start;
-  background-color: rgba(0, 198, 207, 0.05);
-  border: 1px solid var(--primary-color);
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+  padding: 10px 20px;
+  margin: 20px auto 0;
+  border: 1px dashed var(--primary-color);
   border-radius: 10px;
 }
 
-#contact-form {
+/* #contact-form {
   max-width: 90%;
   display: flex;
   padding: 50px;
@@ -631,18 +659,18 @@ th:last-of-type {
   background-color: rgba(0, 198, 207, 0.05);
   border: 1px solid var(--primary-color);
   border-radius: 10px;
-}
+} */
 
 .contactImage {
   display: grid;
   grid-template-columns: repeat(100px, 1fr);
-  margin: 20px auto;
+  margin: 0 auto;
 }
 
 .contactLink {
   width: 100px;
   height: 100px;
-  margin: 20px;
+  margin: 5px;
   cursor: pointer;
 }
 
@@ -688,13 +716,6 @@ textarea:focus {
   border: 2px solid var(--primary-color);
 }
 
-#contactdetails {
-  width: 100%;
-  display: flex;
-  flex-flow: column;
-  padding: 50px;
-}
-
 .backtoplink {
   width: 100%;
   display: flex;
@@ -717,8 +738,7 @@ textarea:focus {
   font-weight: bold;
 }
 
-/* .gridtext {
-  text-align: justify;
-  text-align-last: justify;
+.gridtext {
+  text-align: left;
+  padding: 10px 30px;
 }
- */
