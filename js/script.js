@@ -1,12 +1,62 @@
-/* // XXXX überarbeiten!!! XXXXX
+// more-button
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('.more-btn').forEach((button) => {
+    button.addEventListener('click', function () {
+      const gridItem = this.parentElement;
+      const gridUnfold = gridItem.querySelector('.gridUnfold');
 
+      // Toggle the visibility of the additional content
+      if (
+        gridUnfold.style.display === 'none' ||
+        gridUnfold.style.display === ''
+      ) {
+        gridUnfold.style.display = 'block';
+        this.textContent = 'See less';
+        gridItem.classList.add('expanded');
+      } else {
+        gridUnfold.style.display = 'none';
+        this.textContent = 'See more';
+        gridItem.classList.remove('expanded');
+      }
+    });
+  });
+});
 
-function() {
+// modal
+/* document.addEventListener('DOMContentLoaded', function () {
+  const modal = document.getElementById('imageModal');
+  const modalImg = document.getElementById('modalImage');
+  const imageInfo = document.getElementById('imageInfo');
+  const span = document.getElementsByClassName('close')[0];
+
+  // When the user clicks on an image
+  document.querySelectorAll('.projectImage').forEach((img) => {
+    img.onclick = function () {
+      modal.style.display = 'block';
+      modalImg.src = this.src;
+      imageInfo.textContent = this.getAttribute('data-info');
+    };
+  });
+
+  // Close the modal when the user clicks on <span> (x)
+  span.onclick = function () {
+    modal.style.display = 'none';
+  };
+
+  // Close the modal when the user clicks outside of it
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = 'none';
+    }
+  };
+});
+ */
+/* function() {
     let form = document.querySelector('#contact-form');
     let emailInput = document.querySelector('#email');
-    let passwordInput = document.querySelector('#password');
-    
-   /*  function validateEmail() {
+    let passwordInput = document.querySelector('#password');} */
+
+/*  function validateEmail() {
       let value = emailInput.value;
       let hasAtSign = value.indexOf('@') > -1;
       let hasDot =  value.indexOf('.') > -1;
