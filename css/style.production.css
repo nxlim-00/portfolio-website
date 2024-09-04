@@ -26,11 +26,11 @@ main {
 
 #aboutmain {
   line-height: 1.8;
-  margin: auto;
+  /* margin: auto; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  max-width: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-flow: column wrap;
@@ -57,7 +57,51 @@ main {
   align-items: center;
   -ms-flex-line-pack: center;
   align-content: center;
-  width: 80%;
+  width: 60%;
+}
+
+.aboutGrid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: 100%;
+  gap: 40px;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+  margin: 0 auto;
+}
+
+.aboutGridItem {
+  padding: 10px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* .aboutQual {
+  max-width: 700px;
+  border: 1px dashed var(--primary-color);
+  border-radius: 25px;
+  padding: 0 20px;
+} */
+
+.aboutQual {
+  max-width: 100%;
+  width: 90%; /* Use a percentage to make it responsive */
+  border: 1px dashed var(--primary-color);
+  border-radius: 25px;
+  padding: 0 20px;
+  margin: 0 auto; /* Center the element */
+}
+
+#aboutlist {
+  list-style-type: square;
+  text-align: left;
 }
 
 footer {
@@ -132,21 +176,35 @@ h3 {
 .profile__portrait {
   float: left;
   max-width: 250px;
+  max-height: 250px;
   width: 100%;
   height: auto;
-  margin-right: 40px;
+
   border-radius: 50%;
 }
 
 .profile {
-  max-width: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  width: 100%;
+  max-width: 700px;
   min-height: 350px;
   margin: 50px auto 0;
   border: 1px dashed var(--primary-color);
   border-radius: 25px;
-  padding: 50px 0 50px 80px;
+  padding: 40px;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+}
 
-  /* background-color: rgba(0, 198, 207, 0.05); */
+.profileText {
+  margin-top: 20px;
 }
 
 .socials {
@@ -467,7 +525,7 @@ button:focus,
 
 /* @media for responsive website */
 
-@media all and (max-width: 500px) {
+/* @media all and (max-width: 500px) {
   h1 {
     font-size: 22px;
   }
@@ -498,7 +556,7 @@ button:focus,
     padding: auto;
     margin: 40px;
   }
-}
+} */
 
 /* @keyframes for animation */
 
@@ -696,36 +754,6 @@ button:focus,
   animation-timing-function: linear;
 }
 
-.aboutGrid {
-  display: -ms-grid;
-  display: grid;
-  /* grid-template-columns: 1fr 2fr; */
-  grid-template-columns: repeat(auto-fit, minmax(500px, 2fr));
-  gap: 40px;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: start;
-  margin: 0 40px;
-}
-
-.aboutGridItem {
-  padding: 10px;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.aboutQual {
-  max-width: 700px;
-  border: 1px dashed var(--primary-color);
-  border-radius: 25px;
-  padding: 0 20px;
-}
-
-#aboutlist {
-  list-style-type: square;
-  text-align: left;
-}
-
 table,
 th,
 td {
@@ -817,7 +845,7 @@ th:last-of-type {
   -ms-flex-line-pack: justify;
   align-content: space-between;
   padding: 50px;
-  margin: 50px 300px;
+  margin: 50px 10px;
   border: 1px solid var(--primary-color);
   border-radius: 10px;
   background-color: rgba(0, 198, 207, 0.05);
@@ -831,6 +859,7 @@ th:last-of-type {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  padding: 0 10px;
 }
 
 #contactdetails {
@@ -865,7 +894,7 @@ th:last-of-type {
 .contactImage {
   display: -ms-grid;
   display: grid;
-  /*   -ms-grid-columns: (1fr)[100px]; */
+  /* -ms-grid-columns: (1fr)[100px]; */
   grid-template-columns: repeat(100px, 1fr);
   margin: 0 auto;
 }
