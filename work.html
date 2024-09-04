@@ -24,8 +24,6 @@
   </head>
   <body>
     <header class="page-header">
-      <!-- Flexbox parent container -->
-
       <img
         src="img/personal_icon.svg"
         alt="Personal logo"
@@ -69,11 +67,11 @@
         <h1>Welcome to my project overview</h1>
 
         <div class="gridheaderTitle">
-          Here, you'll find a diverse range of applications and solutions that
+          <!-- Here, you'll find a diverse range of applications and solutions that
           I've developed, showcasing my skills in various programming languages,
           frameworks, and technologies.
           <br />
-          <br />
+          <br /> -->
           Feel free to explore, and don't hesitate to reach out if you have any
           questions or would like to collaborate!
         </div>
@@ -83,7 +81,14 @@
         <div class="grid__item">
           <div class="gridItemTitle"><h2>myFlix (React)</h2></div>
           <div>
-            <img src="img/myflixreact.png" class="projectImage" />
+            <img
+              src="img/myflixreact.png"
+              class="projectImage"
+              alt="Picture of application"
+            />
+          </div>
+          <button class="more-btn">See more</button>
+          <div class="gridUnfold" style="display: none">
             <p class="gridtext">
               The myFlix-client is a React-based web application that allows
               users to browse, search, and view detailed information about a
@@ -114,7 +119,14 @@
         <div class="grid__item">
           <div class="gridItemTitle"><h2>myFlix (Angular)</h2></div>
           <div>
-            <img src="img/myflixangular.png" class="projectImage" />
+            <img
+              src="img/myflixangular.png"
+              class="projectImage"
+              alt="Picture of application"
+            />
+          </div>
+          <button class="more-btn">See more</button>
+          <div class="gridUnfold" style="display: none">
             <p class="gridtext">
               myFlix Angular Client is a web application that allows users to
               browse a movie database, view movie details, manage their favorite
@@ -149,8 +161,11 @@
               and Angular using Express, MongoDB, and Mongoose. The API allows
               users to register, update their profiles, add or remove favorite
               movies, and access movie details by title, genre, or director.
-              <br />
-              <br />
+            </p>
+          </div>
+          <button class="more-btn">See more</button>
+          <div class="gridUnfold" style="display: none">
+            <p class="gridtext">
               It includes authentication with JWT, validation for user input,
               and CORS settings to control access from specific origins. The app
               also serves static files and handles errors gracefully.
@@ -174,7 +189,14 @@
         <div class="grid__item">
           <div class="gridItemTitle"><h2>Meet App</h2></div>
           <div>
-            <img src="img/meetapp.png" class="projectImage" />
+            <img
+              src="img/meetapp.png"
+              class="projectImage"
+              alt="Picture of application"
+            />
+          </div>
+          <button class="more-btn">See more</button>
+          <div class="gridUnfold" style="display: none">
             <p class="gridtext">
               "Meet App" is a React application that allows users to explore
               events by selecting a city and choosing how many events to
@@ -206,7 +228,14 @@
         <div class="grid__item">
           <div class="gridItemTitle"><h2>Pokedex</h2></div>
           <div>
-            <img src="img/pokedex.png" class="projectImage" />
+            <img
+              src="img/pokedex.png"
+              class="projectImage"
+              alt="Picture of application"
+            />
+          </div>
+          <button class="more-btn">See more</button>
+          <div class="gridUnfold" style="display: none">
             <p class="gridtext">
               This project is a web application that displays a list of Pokémon
               using data fetched from the PokeAPI. It is built using HTML, CSS,
@@ -235,7 +264,14 @@
         <div class="grid__item">
           <div class="gridItemTitle"><h2>Chat-App</h2></div>
           <div>
-            <img src="img/chatapp.png" class="chatImage" />
+            <img
+              src="img/chatapp.png"
+              class="chatImage"
+              alt="Picture of application"
+            />
+          </div>
+          <button class="more-btn">See more</button>
+          <div class="gridUnfold" style="display: none">
             <p class="gridtext">
               ChatApp is a real-time messaging application built with React
               Native, Firebase, and Expo. This app allows users to send and
@@ -262,7 +298,14 @@
         <div class="grid__item">
           <div class="gridItemTitle"><h2>To-Do-List</h2></div>
           <div>
-            <img src="img/todolist.png" class="projectImage" />
+            <img
+              src="img/todolist.png"
+              class="projectImage"
+              alt="Picture of application"
+            />
+          </div>
+          <button class="more-btn">See more</button>
+          <div class="gridUnfold" style="display: none">
             <p class="gridtext">
               A simple and interactive To-Do List application that allows users
               to add, mark, delete, and reorder tasks.
@@ -1982,20 +2025,11 @@
         </g>
       </svg>
 
-      <footer class="page-footer">
-        <!-- <p>Find me on</p>
-        <div class="social-media">
-                
-                <img src="img/github_icon.svg" alt="Github logo">
-                <img src="img/twitter_icon.svg" alt="Twitter logo">
-                <img src="img/linkedin_icon.svg" alt="LinkedIn logo">
-        </div> -->
-      </footer>
       <br />
       <div class="backtoplink">
         <a href="#" class="backtop">Back to the top</a>
-        <!-- <button type="button">Back to the top</button> -->
       </div>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
