@@ -22,6 +22,10 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+document.getElementById('homeButton').addEventListener('click', function () {
+  window.location.href = '/'; // This will navigate to the home page
+});
+
 // modal
 /* document.addEventListener('DOMContentLoaded', function () {
   const modal = document.getElementById('imageModal');
