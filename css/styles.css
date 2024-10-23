@@ -161,6 +161,8 @@ h3 {
 
 .profileText {
   margin-top: 20px;
+  padding-bottom: 30px;
+  text-align: center;
 }
 
 .socials {
@@ -191,7 +193,8 @@ a:active {
 }
 
 #checkcode,
-.backtop {
+.backtop,
+.cvbutton {
   text-decoration: none;
   color: var(--primary-color);
   border-radius: 10px;
@@ -215,7 +218,9 @@ a:active {
 #checkcode:hover,
 #checkcode:focus,
 .backtop:hover,
-.backtop:focus {
+.backtop:focus,
+.cvbutton:hover,
+.cvbutton:focus {
   text-decoration: none;
   color: var(--secondary-color);
   border-color: var(--secondary-color);
@@ -225,11 +230,22 @@ a:active {
 }
 
 #checkcode:active,
-.backtop:active {
+.backtop:active,
+.cvbutton:active {
   color: var(--primary-background-color);
   background-color: var(--secondary-color);
   outline: 1px solid var(--secondary-color);
   transform: scale(1.03);
+}
+
+.cvbutton {
+  align-self: center;
+}
+
+.centercvbutton {
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .navigation-list__item {

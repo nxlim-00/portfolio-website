@@ -206,6 +206,8 @@ h3 {
 
 .profileText {
   margin-top: 20px;
+  padding-bottom: 30px;
+  text-align: center;
 }
 
 .socials {
@@ -236,7 +238,8 @@ a:active {
 }
 
 #checkcode,
-.backtop {
+.backtop,
+.cvbutton {
   text-decoration: none;
   color: var(--primary-color);
   border-radius: 10px;
@@ -261,7 +264,9 @@ a:active {
 #checkcode:hover,
 #checkcode:focus,
 .backtop:hover,
-.backtop:focus {
+.backtop:focus,
+.cvbutton:hover,
+.cvbutton:focus {
   text-decoration: none;
   color: var(--secondary-color);
   border-color: var(--secondary-color);
@@ -274,13 +279,26 @@ a:active {
 }
 
 #checkcode:active,
-.backtop:active {
+.backtop:active,
+.cvbutton:active {
   color: var(--primary-background-color);
   background-color: var(--secondary-color);
   outline: 1px solid var(--secondary-color);
   -webkit-transform: scale(1.03);
   -ms-transform: scale(1.03);
   transform: scale(1.03);
+}
+
+.cvbutton {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+
+.centercvbutton {
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .navigation-list__item {
@@ -895,7 +913,7 @@ th:last-of-type {
 .contactImage {
   display: -ms-grid;
   display: grid;
-  /* -ms-grid-columns: (1fr)[100px]; */
+
   grid-template-columns: repeat(100px, 1fr);
   margin: 0 auto;
 }
