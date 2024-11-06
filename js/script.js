@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 document.getElementById('homeButton').addEventListener('click', function () {
-  window.location.href = '/'; // This will navigate to the home page
+  window.location.href = '/portfolio-website'; // This will navigate to the home page
 });
 
 // modal
